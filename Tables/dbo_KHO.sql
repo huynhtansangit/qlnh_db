@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[KHO] (
+  [MAKHO] [varchar](5) NOT NULL,
+  [TENKHO] [nchar](10) NULL,
+  [NGAYNHAPKHO] [nchar](10) NULL,
+  [SUCCHUA] [float] NULL,
+  CONSTRAINT [PK_KHO] PRIMARY KEY CLUSTERED ([MAKHO])
+)
+ON [PRIMARY]
+GO

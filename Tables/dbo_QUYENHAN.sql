@@ -1,0 +1,13 @@
+﻿CREATE TABLE [dbo].[QUYENHAN] (
+  [MAQH] [varchar](5) NOT NULL,
+  [TENQH] [varchar](10) NULL,
+  [MOTA] [nvarchar](255) NULL,
+  [MACV] [varchar](5) NOT NULL,
+  CONSTRAINT [PK_quyenhan] PRIMARY KEY CLUSTERED ([MAQH], [MACV])
+)
+ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[QUYENHAN] WITH CHECK
+  ADD CONSTRAINT [FK_qh_cv] FOREIGN KEY ([MACV]) REFERENCES [dbo].[CHUCVU] ([MACV])
+GO

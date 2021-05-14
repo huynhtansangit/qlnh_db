@@ -1,0 +1,14 @@
+﻿CREATE TABLE [dbo].[THUCUONG] (
+  [MATHUCUONG] [varchar](5) NOT NULL,
+  [TENTHUCUONG] [nvarchar](100) NULL,
+  [MOTA] [nvarchar](300) NULL,
+  [DVT] [nvarchar](20) NULL,
+  [GIABAN] [int] NULL,
+  [HINH] [image] NULL,
+  [matrangthai] [varchar](5) NULL,
+  [NGAYXOATHUCUONG] [datetime] NULL,
+  CONSTRAINT [PK_THUCUONG] PRIMARY KEY NONCLUSTERED ([MATHUCUONG])
+)
+ON [PRIMARY]
+TEXTIMAGE_ON [PRIMARY]
+GO
